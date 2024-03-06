@@ -139,6 +139,7 @@ int main() // chamada de menu
 	    printf("\t1 - Registrar nomes\n"); //1
     	printf("\t2 - Consultar os nomes\n"); //2
     	printf("\t3 - Deletar os nomes\n\n"); //3
+    	printf("\t4 - Sair do sistema\n\n");
         printf("Opção: "); // fim do menu
        
         scanf("%d", &opcao); // armazenando a escolha do usuário
@@ -158,6 +159,12 @@ int main() // chamada de menu
         	case 3:
 			deletar(); // chamada de função
 	    	break;
+	    	
+	    	case 4:
+	       printf("Obrigado por utilizar o sistema!\n");
+	       return 0;
+	       break;
+	    
 	    	
 	    	
 	       default: //chamada de função inesistente exemplo numero 4 
